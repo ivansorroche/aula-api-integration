@@ -1,0 +1,128 @@
+{
+	"info": {
+		"_postman_id": "cfa497cd-d0ee-4517-a398-59f732676aaa",
+		"name": "crude",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "19562434"
+	},
+	"item": [
+		{
+			"name": "Criar cliente",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"codigo\": \"teste1\", \"nome\": \"Ivan\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/clientes",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"clientes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get cliente por codigo",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/clientes/teste",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"clientes",
+						"teste"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Todos clientes",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/clientes",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"clientes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Criar endereco",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"indice\": 1, \"logradouro\": \"Rua do Ivan\", \"numero\": \"283\", \"complemento\": \"teste\", \"cidade\": \"São Paulo\", \"estado\": \"São Paulo\", \"cep\": \"12345-678\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/clientes/teste/enderecos",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"clientes",
+						"teste",
+						"enderecos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get endereco por codigo",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/clientes/teste/enderecos",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"clientes",
+						"teste",
+						"enderecos"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
